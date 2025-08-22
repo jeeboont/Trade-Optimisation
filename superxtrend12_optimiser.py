@@ -990,10 +990,10 @@ def main():
         max_bars = st.slider(
             "Max Bars to Process",
             min_value=200,
-            max_value=2000,
-            value=500,
+            max_value=5000,
+            value=1000,
             step=100,
-            help="Fewer bars = faster processing"
+            help="More bars = better results but slower processing"
         )
         
         skip_low_volume = st.checkbox(
