@@ -1358,6 +1358,19 @@ Largest Loss: {best['largest_loss']:.1f}
         - Monitor live performance vs. backtest results
         """)
     
-    # Footer
+# Footer
     st.markdown(
         f"""
+        <div style="text-align: center; color: #666; margin-top: 40px;">
+            <small>
+            Super XTrend v{__version__} Optimizer | Advanced X Trend Strategy Optimization<br>
+            Pivot Supertrend Filter | HTF X-Trend | 2-Bar Confirmation | Risk Management<br>
+            Last Updated: {__last_updated__} | Compatible with cTrader Super XTrend v1.2
+            </small>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+
+if __name__ == "__main__":
+    main()
